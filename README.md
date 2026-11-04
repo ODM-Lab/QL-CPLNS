@@ -16,13 +16,13 @@ The candidate processing paths used in this study were adopted from Kim et al. a
 
 ## 📁 Contents
 
-1. [N10 Collection](Dataset/N10_collection/)  
+1. [N10 Collection](Dataset/instances/N10/)  
    Small instances with `N = 10` jobs.
 
-2. [N30 Collection](Dataset/N30_collection/)  
+2. [N30 Collection](Dataset/instances/N30/)  
    Medium instances with `N = 30` jobs.
 
-3. [N50 Collection](Dataset/N50_collection/)  
+3. [N50 Collection](Dataset/instances/N50/)  
    Large instances with `N = 50` jobs.
 
 Each collection contains eight Excel workbooks, corresponding to all combinations of the two processing-time, QTL-value, and QTL-coverage settings. Each workbook contains five generated instances.
