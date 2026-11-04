@@ -8,7 +8,7 @@ This repository contains the pre-generated scheduling instances used in our stud
 
 The datasets in this repository correspond to the data generation and experimental setup described in Section 5.1 of our study.
 
-We consider a semiconductor wafer fabrication environment with six processing stages and 5, 3, 7, 3, 5, and 7 eligible machines at the respective stages. All instances are synthetically generated for the computational evaluation of integrated path selection and scheduling under queue time limits.
+We consider a semiconductor wafer fabrication environment with six processing stages and 5, 3, 7, 3, 5, and 7 machines at the respective stages. All instances are synthetically generated for the computational evaluation of integrated path selection and scheduling under queue time limits.
 
 The repository contains 120 scheduling instances. The instances cover three problem sizes, two processing-time settings, two QTL-value settings, and two QTL-coverage settings. Five instances are generated for each experimental condition.
 
@@ -29,12 +29,43 @@ Each collection contains eight Excel workbooks, corresponding to all combination
 
 ## 📝 Workbook Contents
 
-Each workbook contains the following sheets:
+Each workbook contains five generated instances and the following sheets.
 
-- `Job_split`: product-type composition and generation seed for each instance.
-- `QTL_length`: QTL windows and limit values by product type.
-- `QTL_resolved`: QTL limits resolved for applicable stage transitions.
-- `PT_A`, `PT_B`, and `PT_C`: processing times by machine for the three product types.
+### `Job_split`
+
+| Column | Description |
+|---|---|
+| `instance_id` | Identifier of the generated instance. |
+| `seed` | Random seed used to generate the instance. |
+| `N_total` | Total number of jobs. |
+| `n_A`, `n_B`, `n_C` | Numbers of jobs of product types A, B, and C, respectively. |
+
+### `QTL_length`
+
+| Column | Description |
+|---|---|
+| `instance_id` | Identifier of the generated instance. |
+| `qtl_step_windows_A`, `qtl_values_A` | Stage window and corresponding QTL values for product type A. |
+| `qtl_step_windows_B`, `qtl_values_B` | Stage window and corresponding QTL values for product type B. |
+| `qtl_step_windows_C`, `qtl_values_C` | Stage window and corresponding QTL values for product type C. |
+
+### `QTL_resolved`
+
+| Column | Description |
+|---|---|
+| `instance_id` | Identifier of the generated instance. |
+| `type` | Product type to which the QTL applies. |
+| `r` | Index of the preceding stage in a QTL-constrained transition. |
+| `L_r` | Maximum allowable waiting time between completion at stage `r` and the start at stage `r+1`. |
+
+### `PT_A`, `PT_B`, and `PT_C`
+
+These sheets contain processing times for product types A, B, and C, respectively.
+
+| Column | Description |
+|---|---|
+| `instance_id` | Identifier of the generated instance. |
+| `PT_i1k1`, ..., `PT_i6k7` | Processing time of machine `k` at stage `i` for the corresponding product type. The number after `i` identifies the stage, and the number after `k` identifies the machine. |
 
 ## ⚠️ Notes
 
