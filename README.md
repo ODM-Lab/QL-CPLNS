@@ -35,14 +35,11 @@ Each workbook contains the following sheets:
 - `QTL_length`: QTL windows and limit values by product type.
 - `QTL_resolved`: QTL limits resolved for applicable stage transitions.
 - `PT_A`, `PT_B`, and `PT_C`: processing times by machine for the three product types.
-- `Checks`: data-validation results.
-- `Setting`: data-generation settings and machine configuration.
 
 ## ⚠️ Notes
 
 - All instances are synthetically generated for algorithm testing and performance evaluation.
-- The file names follow the convention `PT*_Q*_C*_N*.xlsx`.
-- The `PT3` file label denotes the wide processing-time setting, which is referred to as `PT2` in the manuscript.
+- The file names follow the convention `PT{1,2}_Q{1,2}_C{1,2}_N{10,30,50}.xlsx`.
 - Candidate processing paths are not duplicated in this repository; please refer to the linked GAInS repository.
 
 ## 📄 Citation
