@@ -22,7 +22,7 @@ The candidate processing paths used in this study were adopted from Kim et al. a
 2. [N30 Collection](Dataset/instances/N30/)  
    Medium instances with `N = 30` jobs.
 
-3. [N50 Collection](Dataset/instances/N50/)
+3. [N50 Collection](Dataset/instances/N50/)<br>
    Large instances with `N = 50` jobs.
 
 4. [Candidate Path Data](Dataset/paths/)  
