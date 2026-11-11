@@ -74,9 +74,9 @@ These sheets contain processing times for product types A, B, and C, respectivel
 
 The `Dataset/paths` directory contains the candidate processing paths and final mapped quality scores used by QL-CPLNS.
 
-- `candidate_paths_A.csv`: product type A (425 paths)
-- `candidate_paths_B.csv`: product type B (422 paths)
-- `candidate_paths_C.csv`: product type C (434 paths)
+- `Candidate_path_A.csv`: product type A (425 paths)
+- `Candidate_path_B.csv`: product type B (422 paths)
+- `Candidate_path_C.csv`: product type C (434 paths)
 
 `Step 1`--`Step 6` give the one-based machine indices along a processing path. `score` is the final mapped quality score used by QL-CPLNS. `Yield` is retained as a source attribute and is not used by QL-CPLNS.
 
